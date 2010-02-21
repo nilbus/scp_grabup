@@ -1,0 +1,13 @@
+scp_grabup
+
+Grab screenshots of a window or selection and upload via scp to a webserver.
+Relies on passwordless ssh key authentication for use outside of a terminal.
+
+Dependencies: scrot, xsel
+
+Usage:
+- Set your configuration variables - browser path, scp host/path, url base.
+- Run grabup.
+- Click on a window to select it, or drag to select a rectangular area.
+- A browser will open to display your screenshot, and the URL is copied to the
+  clipboard.
