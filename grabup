@@ -7,7 +7,7 @@ SCP_HOST=yourwebhost.com
 SCP_PATH=public_html/grabup
 URL_BASE=http://www.yourwebhost.com/grabup
 
-NOW=`date +%Y-%m-%d_%H:%M:%S`
+NOW=`date +%Y-%m-%d_%H.%M.%S`
 TEMPDIR=/tmp/grabup
 FILENAME=$NOW.png
 mkdir -p $TEMPDIR
