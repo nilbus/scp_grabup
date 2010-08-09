@@ -3,6 +3,7 @@
 
 # Configuration
 BROWSER=/usr/bin/firefox
+SCP_USER=username
 SCP_HOST=yourwebhost.com
 SCP_PATH=public_html/grabup
 URL_BASE=http://www.yourwebhost.com/grabup
@@ -13,7 +14,7 @@ FILENAME=$NOW.png
 mkdir -p $TEMPDIR
 sleep 0.5 # Wait for key release so scrot can capture
 scrot -s $TEMPDIR/$FILENAME
-scp $TEMPDIR/$FILENAME $SCP_HOST:$SCP_PATH/
+scp $TEMPDIR/$FILENAME $SCP_USER@$SCP_HOST:$SCP_PATH/
 URL=$URL_BASE/$FILENAME
 echo $URL | xsel -i --clipboard
 echo $URL | xsel -i --primary
