@@ -2,7 +2,7 @@
 # Dependencies: scrot, xsel
 
 # Configuration
-BROWSER=/usr/bin/firefox
+BROWSER=/usr/bin/sensible-browser
 SCP_USER=username
 SCP_HOST=yourwebhost.com
 SCP_PATH=public_html/grabup
